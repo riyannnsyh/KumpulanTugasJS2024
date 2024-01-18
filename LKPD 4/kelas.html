@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soal No 1</title>
+</head>
+<body>
+  <h1><center>Menentukan Kelas dari Nilai</center></h1>
+  <script>
+
+  let nama = prompt("Masukkan Nama Anda");
+  let pabp = parseFloat(prompt("Masukkan Nilai PABP"));
+  let mtk = parseFloat(prompt("Masukkan Nilai MTK"));
+  let dpk = parseFloat(prompt("Masukkan Nilai DPK"));
+  let rata2 = (pabp + mtk + dpk) / 3;
+
+  if (rata2 >= 80 && rata2 <= 100) {
+    grade = "A";
+  } 
+  else if (rata2 >= 75 && rata2 <= 80) {
+    grade = "B";
+  } 
+  else if (rata2 >= 65 && rata2 <= 75) {
+    grade = "C";
+  } 
+  else if (rata2 >= 45 && rata2 <= 65) {
+    grade = "D";
+  } 
+  else if (rata2 >= 0 && rata2 <= 45) {
+    grade = "E";
+  } 
+  else {
+    grade = "K";
+  }
+
+  document.write(`Nilai Rata - Rata ${nama} adalah ${rata2} <br>
+  Maka ${nama} ditempatkan di kelas ${grade}`)
+  </script>
+</body>
+</html>

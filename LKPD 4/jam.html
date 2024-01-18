@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soal No 3</title>
+</head>
+<body>
+  <script>
+    let hh = Number(prompt("Maukkan Jam"));
+    let mm = Number(prompt("Masukkan Menit"));
+    let ss = Number(prompt("Masukkan Detik")) + 1;
+
+    if(ss > 59) {
+      hasil = sds = 0;
+      hasilm = mm + 1;
+      hasilh = hh;
+      hasilsemua = `${hasilh}:${hasilm}:${hasil}`;
+    }
+
+    if(hasilm > 59) {
+      hasil = ss = 0;
+      hasilm = mm = 0;
+      hasilh = hh + 1;
+      hasilsemua = `${hasilh}:${hasilm}:${hasil}`;
+    }
+
+    if(hasilh > 23) {
+      hasil = ss = 0;
+      hasilm = mm = 0;
+      hasilh = hh = 0;
+      hasilsemua = `${hasilh}:${hasilm}:${hasil}`;
+    }
+    document.write(hasilsemua)
+  </script>
+</body>
+</html>
