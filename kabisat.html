@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kabisat</title>
+</head>
+<body>
+  <script>
+    // Kabisat dengan For
+    for (let tahun = Number(prompt("Masukkan Tahun")); tahun <= 2024; tahun += 4){
+      if (tahun % 4 != 0){
+        hasil = "bukan tahun kabisat"
+      }
+      else if (tahun % 100 != 0){
+        hasil = "tahun kabisat"
+      }
+      else if (tahun % 400 == 0){
+        hasil = "tahun kabisat"
+      }
+      else {
+        hasil = "bukan tahun kabisat"
+      }
+      console.log(tahun + hasil)
+    }
+
+    // Kabisat dengan While  
+    let thn = Number(prompt("Masukkan Tahun"))
+
+    while(thn <= 2024){
+      if (thn % 4 != 0){
+        hsl = "bukan tahun kabisat"
+      }
+      else if (thn % 100 != 0){
+        hsl = "tahun kabisat"
+      }
+      else if (thn % 400 == 0){
+        hsl = "tahun kabisat"
+      }
+      else {
+        hsl = "bukan tahun kabisat"
+      }
+      console.log(thn + hsl)
+      thn  += 4
+    }
+
+    // Kabisat dengan Do While  
+    let th = Number(prompt("Masukkan Tahun"))
+
+    do{
+      if (th % 4 != 0){
+        hsil = "bukan tahun kabisat"
+      }
+      else if (th % 100 != 0){
+        hsil = "tahun kabisat"
+      }
+      else if (th % 400 == 0){
+        hsil = "tahun kabisat"
+      }
+      else {
+        hsil = "bukan tahun kabisat"
+      }
+      console.log(th + hsil)
+      th  += 4
+    }while (th <= 2024)
+  </script>
+</body>
+</html>
