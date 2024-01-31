@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soal No 5</title>
+</head>
+<body>
+  <script>
+    let total = 0;
+    let bilBesar = -Infinity;
+    let bilKecil = Infinity;
+    let x = 1;
+
+    while(x <= 20) {
+      let num = parseInt(prompt('Inputkan Nilai', x))
+
+      if(isNaN(num)){
+        console.log(`${num} Bukan angka, silahkan coba lagi`)
+      } else {
+        total += num
+        if(num > bilBesar) {
+          bilBesar = num
+        }
+        if (num < bilKecil) {
+          bilKecil = num
+        }
+        x++
+      }
+    }
+
+    let rataRata = total/20;
+
+    console.log(`Bilangan Terbesar ${bilBesar}`)
+    console.log(`Bilangan Terkecil ${bilKecil}`)
+    console.log(`Rata - Rata ${rataRata}`)
+  </script>
+</body>
+</html>
